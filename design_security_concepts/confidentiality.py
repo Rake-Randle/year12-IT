@@ -21,5 +21,5 @@ def decrypt_data():
     decrypted_data = cipher_suite.decrypt(encrypted_data.encode())
     return jsonify({'decrypted_data': decrypted_data.decode})
 
-if __name__ == '__name__':
+if __name__ == '__main__':
     app.run(debug=True)
